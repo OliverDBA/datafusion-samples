@@ -28,4 +28,25 @@ Replace the placeholders with your project specific settings
  
 * DataFusionQuickstart_multiple_targets_macros-cdap-data-pipeline.json 
    Pipeline with multiple targets, GCS and BigQuery
+
+## API calls
+
+* set_environment.sh
+  Adjust to match your environment, is sourced in ever other shell script
+
+* deploy_pipeline.sh
+  Deploys a pipeline from a json file to Data Fusion. 
+   * Needs the name of the pipeline as the first parameter
+   * Full path to the json file as second parameter
+   * uses the default namespace
+
+* get_run_information_pipeline_last_run.sh
+  Displays information regarding the last run
+   * needs one parameter pipeline name
+
+* start_pipeline_api_deployment_macro.sh
+  Sample script to start a pipeline with parameters via the API
+  * starts the pipeline api_deployment_macro
+  * Parameters matching the pipeline defined in file
+     DataFusionQuickstart_macros_error-cdap-data-pipeline.json
   
